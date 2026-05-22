@@ -1,0 +1,60 @@
+# Environment files
+.env
+
+# Virtual environments
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Streamlit
+.streamlit/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# SQLite database
+*.sqlite3
+
+# PyTorch / ML cache
+*.pt
+*.pth
+
+# Temporary files
+temp/
+tmp/
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# PyInstaller
+*.spec
+
+# mypy
+.mypy_cache/
+
+# pytest
+.pytest_cache/
+
+# Ruff
+.ruff_cache/
