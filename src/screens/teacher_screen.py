@@ -24,7 +24,7 @@ from src.database.config import supabase
 
 from datetime import datetime
 
-from src.components.dialog_attendance_results import show_attendance_result
+from src.components.dialog_attendance_results import attendance_result_dialog
 
 import pandas as pd
 
@@ -184,7 +184,7 @@ def teacher_tab_take_attendance():
                             'is_present': bool(is_present)
                         })
 
-                    show_attendance_result(pd.DataFrame(results), attendance_to_log)
+                    attendance_result_dialog(pd.DataFrame(results), attendance_to_log)
     with c3:
         if st.button('Use Voice Attendance', type='primary', width='stretch', icon=':material/mic:'):
             voice_attendance_dialog(selected_subject_id)    
