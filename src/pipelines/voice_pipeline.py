@@ -5,7 +5,7 @@ import librosa
 import streamlit as st
 
 
-@st.cache_resource
+@st.cache_resource(show_spinner=False)
 def load_voice_encoder():
     return VoiceEncoder()
 

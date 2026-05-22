@@ -7,7 +7,7 @@ import streamlit as st
 from src.database.db import get_all_students
 
 
-@st.cache_resource
+@st.cache_resource(show_spinner=False)
 def load_dlib_models():
     detector = dlib.get_frontal_face_detector()
 
@@ -42,7 +42,7 @@ def get_face_embeddings(image_np):
 
     return encodings
 
-@st.cache_resource
+@st.cache_resource(show_spinner=False)
 def get_trained_model():
     X = []
     y = []
